@@ -23,4 +23,18 @@ Heap pop: swap the root with the rightmost, bubble down in O(log(n)) time.
 DFS is recursive, while BFS is NOT recursive.
 The major difference between the tree search and graph search is that, for graph search, we need to track the exploring history to avoid infinite loop. 
 
+The arithmetic right shift (>>) essentially divides by two, while the logical right shift (>>>) does what is visually seen as shifting the bits.
+Use the shift operators to get masks for bit manipulation with bit operators (&, |), such as get bit, set bit, clear bit and update bit.
+
+The merge sort: runtime O(nlog(n)), memory O(n)+O(log(n)) = O(n).
+The quick sort: runtime O(nlog(n)), memory O(log(n)).
+In the two sorting methods, memory O(log(n)) is for the recursive function calls.
+
+All data members and methods are private by default in C++.
+
+One usage of virtual function is when we can't (don't want to) implement a method in the parent class.
+By defining a pure virtual function (e.g., virtual int foo() = 0) in a class, the class will be an abstract class which cannot be instantiated.
+
+The difference between pass-by-reference and pass-by-pointer is that pointers can be nullptr or reassigned whereas references cannot.
+
 
