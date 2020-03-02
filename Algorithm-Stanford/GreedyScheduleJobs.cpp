@@ -18,8 +18,8 @@ struct Job {
 struct customGreater {
     bool operator() (Job& j1, Job& j2) {
         if(j1.priority>j2.priority) return true;
-        if(j1.priority<j2.priority) return false;
-        if(j1.priority==j2.priority) {
+        else if(j1.priority<j2.priority) return false;
+        else {
             if(j1.weight>j2.weight) return true;
             else return false;
         }

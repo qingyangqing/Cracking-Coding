@@ -35,7 +35,7 @@ long PrimMinSpanTree (vector<vector<Edge>>& G) {
         int min_spanning = INT_MAX;
         has_outreach = 0;
 
-        for(int i=0; i<G.size(); i++) {
+        for(int i=0; i<(int)G.size(); i++) {
             if(explored[i]==1) { // only check outreaches of explored nodes
                 vector<Edge> adj_list_node = G[i];
                 for(auto edge: adj_list_node) {
